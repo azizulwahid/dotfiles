@@ -32,6 +32,12 @@ Plug 'arcticicestudio/nord-vim'
 " Gruvbox theme
 Plug 'morhetz/gruvbox'
 
+" Tokyonight theme 
+Plug 'folke/tokyonight.nvim'
+
+" Terraform linter
+Plug 'hashivim/vim-terraform'
+
 " Tabs
 Plug 'ap/vim-buftabline'
 
@@ -117,13 +123,13 @@ endfunction
 
 " color scheme
 syntax on
-colorscheme nord
+colorscheme tokyonight
 filetype on
 filetype plugin indent on
 
 " lightline
 set noshowmode
-let g:lightline = { 'colorscheme': 'nord' }
+let g:lightline = { 'colorscheme': 'tokyonight' }
 
 " code folding
 "set foldmethod=indent
